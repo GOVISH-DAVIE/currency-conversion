@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>currency converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style> 
+    .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('images/12.gif') 50% 50% no-repeat rgb(249, 249, 249);
+        opacity: .8;
+    }
+</style>
+<body style="background: url('images/body.png') no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+<div class="loader"></div>
+    <div class="home">
+        <nav>
+            <div id="main">
+                <span style="font-size:30px;cursor:pointer; color: #ffffff" onclick="openNav()">@currency converter </span>
+            </div>
+        </nav>
+        <div class="container home" style="width: 90%">
+            <div id="results"></div>
+            <form class="form-inline" action="#" name="curr">
+                <div class="row">
+                    <div class="form-group col-sm-12 col-md-3 col-lg-3 ">
+                        <label for="amount">amount:</label>
+                        <br>
+                        <input type="number" value="1" class="inputs col-sm-12 col-md-12 col-lg-12" id="amt" name="amt" placeholder="amount to  be converted">
+                        <br>
+                        <span id="inpstatus" class="danger"></span>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-3 col-lg-3 ">
+                        <label for="amount">from currency:</label>
+                        <br>
+                        <select name="" id="from" class="inputs col-sm-12 col-md-12 col-lg-12">
+                            <option value="ss">ss</option>
+                            <option value="ss">ss</option>
+                            <option value="ss">ss</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-3 col-lg-3 ">
+                        <label for="amount">to currency:</label>
+                        <br>
+                        <select name="" id="to" class="inputs col-sm-12 col-md-12 col-lg-12 ">
+                            <option value="ss">ss</option>
+                            <option value="ss">ss</option>
+                            <option value="ss">ss</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-3 col-lg-3 ">
+                        <input type="button" class="btn btn-flop" value="convert" onclick="validate()">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- <div id="container"> -->
+            <div class="chart" >
+                <span class="title">
+                    <u> currency perfomance for the past eight days</u>
+                </span>
+                <div class="card ">
+                    <div class="card-body">
+                        <canvas id="myChart"> ss</canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="chart last"  >
+                <span class="title">
+                    <u> currency perfomance for the past eight days</u>
+                </span>
+                <div class="card ">
+                    <div class="card-body">
+                        <canvas id="revmyChart"> ss</canvas>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="js/index.js">
+    let validate = () => {
+        return console.log('hello');
+        
+    };
+</script>
+</html>
